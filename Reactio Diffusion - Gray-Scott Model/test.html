@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="stylesheet" href="test.css"/>
+  <style type="text/css">
+  #canvas {
+	width:500px;
+    padding: 0 0;
+    margin: -250 -250;
+    display: block;
+      }
+</style>
+	  
+</head>
+<body>
+<div>
+<canvas id="canvas">
+</canvas>
+</div>
+<div id="ui">
+
+<h1>controls</h1>
+
+<p>Diffuse A:<span id="slider0Value">0.0</span></p>
+<input id="slider0" type="range" min="0" max="100" />
+
+<p>Diffuse B:<span id="slider1Value">0.0</span></p>
+<input id="slider1" type="range" min="0" max="100" />
+
+<p>Feed Rate:<span id="slider2Value">0.0</span></p>
+<input id="slider2" type="range" min="0" max="200" />
+
+<p>Kill Rate:<span id="slider3Value">0.0</span></p>
+<input id="slider3" type="range" min="0" max="200" />
+
+<div id="options">
+<a id="button1" class="button" title="Clear cells." href="#">Clear Cells</a>
+<a id="button2" class="button" title="Randomize cells." href="#">Randomize Cells</a>
+<a id="button3" class="button" title="Randomize cells." href="#">Next Preset</a>
+</div>
+
+<script src="test.js"></script>
+
+</body>
+</html>	
