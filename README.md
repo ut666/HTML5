@@ -9,7 +9,7 @@ Particle Systems - Boids
 
 ![ScreenShot](Boids.png)
 
-Reactio Diffusion - Gray-Scott Model
+Reaction Diffusion - Gray-Scott Model
 --------------
 
 ![ScreenShot](Gray-Scott Model.png)
