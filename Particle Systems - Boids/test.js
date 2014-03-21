@@ -34,9 +34,9 @@ var World = new function()
 	
 	function ForceWeights()
 	{
-	  this.coh = 0.01;
+	  this.coh = 0.2;
 	  this.sep = 1.0;
-	  this.alg = 0.01;
+	  this.alg = 0.5;
 	  this.ste = 0.0;
 	}
 	var weights = new ForceWeights;
@@ -234,7 +234,7 @@ var World = new function()
 		particles = new Array(NUMBER_OF_PARTICLES);
 		for(var i = 0; i < NUMBER_OF_PARTICLES; i++)
 		{
-			particle[i] = new Particle;
+			particles[i] = new Particle;
 		}
 		
 		// Initiate the main render loop of the game
@@ -374,7 +374,7 @@ var World = new function()
 					v2.y = particle_i.vy;
 					angle = findAngle(v2, v1);
 					angle *=  180.0 / Math.PI;
-					if(angle > -FOV_ANGLE && angle < FOV_ANGLE)
+					if(angle > -FOV_ANGLE/2.0 && angle < FOV_ANGLE/2.0)
 					{
 						forces.algX += particle_j.vx;
 						forces.algY += particle_j.vy;
@@ -469,7 +469,7 @@ var World = new function()
 				context.strokeStyle = '#cccccc';	
 				context.strokeStyle = particle_i.rgba;
 				context.beginPath();
-				angle = (FOV_ANGLE*2) * (Math.PI/180.0);
+				angle = FOV_ANGLE * (Math.PI/180.0);
 				context.arc(particle_i.x, particle_i.y, NEIGHBOURHOOD_RADIUS, angle0-angle/2.0, angle0+angle/2.0, false);
 				context.stroke();
 			}
