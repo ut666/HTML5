@@ -13,3 +13,8 @@ Reaction Diffusion - Gray-Scott Model
 --------------
 
 ![ScreenShot](Gray-Scott Model.png)
+
+Phyllotaxy - Spirals
+--------------
+
+![ScreenShot](Phyllotaxy.png)
