@@ -14,7 +14,7 @@ Reaction Diffusion - Gray-Scott Model
 --------------
 [Demo](http://www.avondo.com/html5/Reaction%20Diffusion%20-%20Gray-Scott%20Model/test.html)
 
-![ScreenShot](Gray-Scott-Model.png)
+![ScreenShot](Gray-Scott%20Model.png)
 
 Phyllotaxy - Spirals
 --------------
